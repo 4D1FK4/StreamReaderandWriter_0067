@@ -27,6 +27,7 @@ int main()
         cout << "- ";
         //mendapatkan setiap karakter dalam satu baris
         getline(cin, baris);
-        //
+        //kondisi jika baris hanya berisi huruf q
+        if (baris == "q") break;
     }
 }
