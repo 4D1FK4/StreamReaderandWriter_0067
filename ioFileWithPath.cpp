@@ -38,4 +38,7 @@ int main()
 
     //membuka file dalam mode membaca
     ifstream infline;
+
+    //menunjuk ke sebuah file dengan ekstensi .txt
+    infline.open(NamaFile + ".txt", ios::in);
 }
