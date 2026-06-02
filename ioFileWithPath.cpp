@@ -45,4 +45,11 @@ int main()
     cout << endl << ">= Membuka dan membaca file" << endl;
     //kondisi jika file ada
     if (infline.is_open())
+    {
+        //perulangan untuk menampilkan setiap baris
+        while (getline(infline, baris))
+        {
+            cout << baris << endl;
+        }
+    }
 }
