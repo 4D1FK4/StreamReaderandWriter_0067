@@ -41,4 +41,8 @@ int main()
 
     //menunjuk ke sebuah file dengan ekstensi .txt
     infline.open(NamaFile + ".txt", ios::in);
+
+    cout << endl << ">= Membuka dan membaca file" << endl;
+    //kondisi jika file ada
+    if (infline.is_open())
 }
