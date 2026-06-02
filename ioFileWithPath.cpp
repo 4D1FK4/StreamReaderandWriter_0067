@@ -40,19 +40,18 @@ int main()
     ifstream infline;
 
     //menunjuk ke sebuah file dengan ekstensi .txt
-    infline.open(NamaFile + ".txt", ios::in);
+    ifstream infile;
 
-    cout << endl << ">= Membuka dan membaca file" << endl;
-    //kondisi jika file ada
-    if (infline.is_open())
+    infile.open(NamaFile + ".txt", ios::in);
+
+    if (infile.is_open())
     {
-        //perulangan untuk menampilkan setiap baris
-        while (getline(infline, baris))
-        {
-            cout << baris << endl;
-        }
-        //menutup file jika telah selesai di loop
-        infline.close();
+    while (getline(infile, baris))
+    {
+        cout << baris << endl;
+    }
+
+    infile.close();
     }
     //kondisi jika file tidak ada
     else cout << "Unable to open file";
