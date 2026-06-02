@@ -5,6 +5,11 @@ using namespace std;
 
 int main()
 {
+
     //deklarasi variabel baris dan Namafile
     string baris, NamaFile;
+
+    //membuat input untuk menangkap nama file
+    cout << "Masukkan nama file : ";
+    cin >> NamaFile;
 }
